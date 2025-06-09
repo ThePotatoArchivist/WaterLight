@@ -7,6 +7,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
 import waterlight.WaterLight;
+import waterlight.WaterLightConfig;
 
 @Mixin(FluidRenderer.class)
 public class FluidRendererMixin {
@@ -16,6 +17,6 @@ public class FluidRendererMixin {
             index = 3
     )
     private float changeAlpha(float alpha, @Local(argsOnly = true) int light) {
-        return alpha == 1f ? WaterLight.NO_LIGHT_WATER_OPACITY + (1 - WaterLight.NO_LIGHT_WATER_OPACITY) * WaterLight.getSaturateProgress(LightmapTextureManager.getSkyLightCoordinates(light)) : alpha;
+        return alpha == 1f ? WaterLightConfig.noLightWaterOpacity + (1 - WaterLightConfig.noLightWaterOpacity) * WaterLight.getOpacityProgress(LightmapTextureManager.getSkyLightCoordinates(light)) : alpha;
     }
 }

@@ -1,0 +1,6 @@
+{
+  "waterlight.midnightconfig.title": "Water Light",
+  "waterlight.midnightconfig.noLightWaterColor": "Desaturated water color",
+  "waterlight.midnightconfig.noLightWaterOpacity": "Full-dark water opacity multiplier",
+  "waterlight.midnightconfig.minimumColorPercent": "Minimum water color interpolate amount"
+}

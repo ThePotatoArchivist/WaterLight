@@ -19,6 +19,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import waterlight.WaterLight;
+import waterlight.WaterLightConfig;
 
 @Mixin(value = DefaultFluidRenderer.class, remap = false)
 public class DefaultFluidRendererMixin {
@@ -35,7 +36,7 @@ public class DefaultFluidRendererMixin {
                     quadColors[i],
                     (int) (
                             ColorARGB.unpackAlpha(quadColors[i])
-                            * (WaterLight.NO_LIGHT_WATER_OPACITY + (1 - WaterLight.NO_LIGHT_WATER_OPACITY) * WaterLight.getSaturateProgress(level.getLightLevel(LightType.SKY, pos)))
+                            * (WaterLightConfig.noLightWaterOpacity + (1 - WaterLightConfig.noLightWaterOpacity) * WaterLight.getOpacityProgress(level.getLightLevel(LightType.SKY, pos)))
                     )
             );
         }

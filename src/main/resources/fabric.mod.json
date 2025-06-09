@@ -15,6 +15,9 @@
 	"icon": "assets/waterlight/icon.png",
 	"environment": "client",
 	"entrypoints": {
+		"main": [
+			"waterlight.WaterLight"
+		],
 		"client": [
 			"waterlight.WaterLight"
 		]
