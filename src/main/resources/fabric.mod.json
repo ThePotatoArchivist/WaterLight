@@ -3,15 +3,15 @@
 	"id": "waterlight",
 	"version": "${version}",
 	"name": "WaterLight",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": " Minecraft mod - Makes water less saturated and more transparent under less sky light ",
 	"authors": [
-		"Me!"
+		"ThePotatoArchivist"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/ThePotatoArchivist/WaterLight",
+		"sources": "https://github.com/ThePotatoArchivist/WaterLight"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/waterlight/icon.png",
 	"environment": "client",
 	"entrypoints": {
