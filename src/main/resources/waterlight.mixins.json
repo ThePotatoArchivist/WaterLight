@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "waterlight.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"BiomeColorsMixin",
+		"sodium.DefaultFluidRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"client": [
+		"FluidRendererMixin"
+	]
+}
