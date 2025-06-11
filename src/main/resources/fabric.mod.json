@@ -16,10 +16,10 @@
 	"environment": "client",
 	"entrypoints": {
 		"main": [
-			"waterlight.WaterLight"
+			"archives.tater.waterlight.WaterLight"
 		],
 		"client": [
-			"waterlight.WaterLight"
+			"archives.tater.waterlight.WaterLight"
 		]
 	},
 	"mixins": [

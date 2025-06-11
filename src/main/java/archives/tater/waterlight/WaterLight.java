@@ -1,4 +1,4 @@
-package waterlight;
+package archives.tater.waterlight;
 
 import eu.midnightdust.lib.config.MidnightConfig;
 import net.fabricmc.api.ClientModInitializer;
@@ -8,7 +8,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class WaterLight implements ClientModInitializer, ModInitializer {
-	public static final String MOD_ID = "waterlight";
+	public static final String MOD_ID = "archives/tater/waterlight";
 
 	public static final boolean SODIUM_INSTALLED = FabricLoader.getInstance().isModLoaded("sodium");
 

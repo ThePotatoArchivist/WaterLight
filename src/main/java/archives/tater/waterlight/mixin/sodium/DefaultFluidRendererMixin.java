@@ -1,4 +1,4 @@
-package waterlight.mixin.sodium;
+package archives.tater.waterlight.mixin.sodium;
 
 import net.caffeinemc.mods.sodium.api.util.ColorARGB;
 import net.caffeinemc.mods.sodium.client.model.color.ColorProvider;
@@ -18,8 +18,8 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import waterlight.WaterLight;
-import waterlight.WaterLightConfig;
+import archives.tater.waterlight.WaterLight;
+import archives.tater.waterlight.WaterLightConfig;
 
 @Mixin(value = DefaultFluidRenderer.class, remap = false)
 public class DefaultFluidRendererMixin {

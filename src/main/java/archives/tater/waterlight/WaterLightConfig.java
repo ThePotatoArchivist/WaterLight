@@ -1,4 +1,4 @@
-package waterlight;
+package archives.tater.waterlight;
 
 import eu.midnightdust.lib.config.MidnightConfig;
 import org.jetbrains.annotations.Nullable;

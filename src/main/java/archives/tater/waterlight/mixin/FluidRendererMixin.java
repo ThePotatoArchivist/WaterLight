@@ -1,4 +1,4 @@
-package waterlight.mixin;
+package archives.tater.waterlight.mixin;
 
 import com.llamalad7.mixinextras.sugar.Local;
 import net.minecraft.client.render.LightmapTextureManager;
@@ -6,8 +6,8 @@ import net.minecraft.client.render.block.FluidRenderer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyArg;
-import waterlight.WaterLight;
-import waterlight.WaterLightConfig;
+import archives.tater.waterlight.WaterLight;
+import archives.tater.waterlight.WaterLightConfig;
 
 @Mixin(FluidRenderer.class)
 public class FluidRendererMixin {

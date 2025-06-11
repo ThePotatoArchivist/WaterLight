@@ -1,4 +1,4 @@
-package waterlight.mixin;
+package archives.tater.waterlight.mixin;
 
 import com.llamalad7.mixinextras.injector.ModifyReturnValue;
 import com.llamalad7.mixinextras.sugar.Local;
@@ -9,8 +9,8 @@ import net.minecraft.world.BlockRenderView;
 import net.minecraft.world.LightType;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
-import waterlight.WaterLight;
-import waterlight.WaterLightConfig;
+import archives.tater.waterlight.WaterLight;
+import archives.tater.waterlight.WaterLightConfig;
 
 @Mixin(BiomeColors.class)
 public class BiomeColorsMixin {
